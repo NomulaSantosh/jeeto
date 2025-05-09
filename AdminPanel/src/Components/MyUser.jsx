@@ -135,7 +135,7 @@ const MyUser = () => {
               <p>Number:</p> 
               <div className='flex'>
                 <FaWhatsapp className='absolute right-21 text-green-500' />
-                <span className='text-gray-700 ml-40'>{user.number}</span>
+                <span className='text-gray-700 ml-30'>{user.number}</span>
               </div>
             </div>
                     <div className='text-sm grid grid-cols-2 gap-y-1 my-3'>
@@ -161,19 +161,15 @@ const MyUser = () => {
                           <p className='text-right'>{user.activeClosed}</p>
                    </div>
 
-                   <div className='text-sm space-y-1 my-1'>
-                      <div className="flex justify-between">
-                         <p className='text-gray-600'>Joined On</p>
-                         <p>{user.joined}</p>
-                      </div>
-                   <div className="flex justify-between items-center">
-                       <p className='text-gray-600'>Last Used</p>
-                       <div className="flex flex-col items-center gap-1">
-                          <p>{user.lastUsed}</p>
-                          <p className='text-[#bebaba] ml-52 text-xs'>(today)</p>
-                      </div>
-                    </div>
-                 </div>
+                   <div className='text-sm grid grid-cols-2 gap-y-1 my-1'>
+                      <p className='text-gray-600'>Joined On</p>
+                      <p className='text-right'>{user.joined}</p>
+
+                      <p className='text-gray-600'>Last Used</p>
+                      <p className='text-right'>{user.lastUsed}</p>
+                   </div>
+                     <p className='text-[#bebaba] ml-52'>(today)</p> 
+
 
                   
             <div className='flex justify-around mt-4'>
