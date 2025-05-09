@@ -134,7 +134,7 @@ const MyUser = () => {
             <div className='text-sm grid grid-cols-2 mb-1'>
               <p>Number:</p> 
               <div className='flex'>
-                <FaWhatsapp className='absolute right-21 top-14 text-green-500' />
+                <FaWhatsapp className='absolute right-21 top-16 text-green-500' />
                 <span className='text-gray-700 ml-24'>{user.number}</span>
               </div>
             </div>
