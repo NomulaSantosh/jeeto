@@ -134,8 +134,8 @@ const MyUser = () => {
             <div className='text-sm grid grid-cols-2 mb-1'>
               <p>Number:</p> 
               <div className='flex'>
-                <FaWhatsapp className='absolute text-green-500' />
-                <span className='text-gray-700 ml-'>{user.number}</span>
+                <FaWhatsapp className='absolute right-21 text-green-500' />
+                <span className='text-gray-700 text-right'>{user.number}</span>
               </div>
             </div>
                     <div className='text-sm grid grid-cols-2 gap-y-1 my-3'>
@@ -170,7 +170,7 @@ const MyUser = () => {
                        <p className='text-gray-600'>Last Used</p>
                        <div className="flex flex-col items-center gap-1">
                           <p>{user.lastUsed}</p>
-                          <p className='text-[#bebaba] text-xs'>(today)</p>
+                          <p className='text-[#bebaba] text-right text-xs'>(today)</p>
                       </div>
                     </div>
                  </div>
