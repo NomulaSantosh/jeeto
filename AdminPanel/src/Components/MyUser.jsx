@@ -123,7 +123,7 @@ const MyUser = () => {
         <h1 className="text-3xl font-bold">My Users</h1>
       </div>
 
-      <div className='px-8 grid grid-cols-5 grid-rows-5 gap-4'>
+      <div className='px-8 grid grid-cols-4 grid-rows-4 gap-4'>
         {users.map((user, index) => (
           <div key={index} className='relative bg-white w-auto h-auto text-black rounded-xl shadow-md p-4'>
             <div className='flex items-center border-b border-gray-200 justify-between mb-3'>
