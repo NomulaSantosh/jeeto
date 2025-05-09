@@ -133,7 +133,7 @@ const MyUser = () => {
 
             <div className='text-sm grid grid-cols-3 mb-1'>
               <FaWhatsapp className='absolute right-21 top-15 text-green-500' />
-              <p>Number:</p> <span className='text-gray-700 ml-50'>{user.number}</span>
+              <p>Number:</p> <span className='text-gray-700 ml-40'>{user.number}</span>
             </div>
                     <div className='text-sm grid grid-cols-2 gap-y-1 my-3'>
                           <p className='text-gray-600'>Deposit To Wallet</p>
@@ -164,11 +164,11 @@ const MyUser = () => {
 
                          <p className='text-gray-600'>Last Used</p>
                          <p className='text-right'>{user.lastUsed}</p>
-                         <p className='text-[#bebaba] ml-90'>(today)</p>
+                         <p className='text-[#bebaba] ml-60'>(today)</p>
                   </div>
                   
             <div className='flex justify-around mt-4'>
-              <button className='bg-gray-200 text-black rounded-lg px-18 py-3'>ID's</button>
+              <button className='bg-gray-200 text-black rounded-lg px-15 py-3'>ID's</button>
               <button className='bg-gray-200 text-black px-10 py-3 rounded'>Transactions</button>
             </div>
           </div>
