@@ -132,9 +132,10 @@ const MyUser = () => {
             </div>
 
             <div className='text-sm grid grid-cols-2 mb-1'>
-              <FaWhatsapp className='absolute right-21 top-15 text-green-500' />
+              <p>Number:</p> 
               <div className='flex'>
-                <p>Number:</p> <span className='text-gray-700 ml-'>{user.number}</span>
+                <FaWhatsapp className='absolute text-green-500' />
+                <span className='text-gray-700 ml-'>{user.number}</span>
               </div>
             </div>
                     <div className='text-sm grid grid-cols-2 gap-y-1 my-3'>
