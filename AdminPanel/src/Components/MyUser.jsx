@@ -1,7 +1,7 @@
 import React from 'react';
 import back from '../assets/back.png';
 import square from '../assets/square.jpg';
-import { FaWhatsapp,FaUser } from 'react-icons/fa';
+import { FaWhatsapp,FaUser,FaSearch } from 'react-icons/fa';
 
 
 const users = [
@@ -124,12 +124,15 @@ const MyUser = () => {
       </div>
 
       <div className="flex justify-between items-center px-8 mb-6">
-        <input
-          type="text"
-          placeholder="🔍 ID, Name, Phone"
-          className="bg-[#2e2e2e] text-white placeholder-gray-400 px-4 py-2 rounded-md w-1/2 outline-none"
-        />
-        <select className="bg-[#2e2e2e] text-white px-4 py-2 rounded-md outline-none ml-4">
+         <div className="relative w-1/2">
+          <FaSearch className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" />
+            <input
+              type="text"
+              placeholder="ID, Name, Phone"
+              className="bg-[#2e2e2e] text-white placeholder-gray-400 pl-10 pr-4 py-2 rounded-md w-full outline-none"
+            />
+         </div>
+        <select className="bg-[#2e2e2e] text-white px-8 py-2 rounded-md outline-none ml-4">
           <option>Partners</option>
           <option>All Users</option>
           <option>Active</option>
