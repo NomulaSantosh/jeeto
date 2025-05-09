@@ -2,6 +2,7 @@ import React from 'react';
 import back from '../assets/back.png';
 import square from '../assets/square.jpg';
 import { FaWhatsapp,FaUser,FaSearch } from 'react-icons/fa';
+import { useNavigate } from 'react-router-dom';
 
 
 const users = [
@@ -113,10 +114,12 @@ const users = [
 ];
 
 const MyUser = () => {
+  const navigate = useNavigate();
+
   return (
     <div className='w-full min-h-screen bg-[#212121] font-sans relative'>
 
-      <img src={back} alt="Back" className='absolute top-3 mt-5 left-20 w-6 cursor-pointer' />
+      <img src={back} onClick={() => navigate('/home')} alt="Back" className='absolute top-3 mt-5 left-20 w-6 cursor-pointer' />
       <img src={square} alt="Square" className='absolute right-20 mt-5 top-0 w-6' />
 
       <div className='text-white text-center mb-8 pt-5'>
