@@ -158,14 +158,20 @@ const MyUser = () => {
                           <p className='text-right'>{user.activeClosed}</p>
                    </div>
 
-                   <div className='text-sm grid grid-cols-2 gap-y-1 my-1'>
+                   <div className='text-sm space-y-1 my-1'>
+                      <div className="flex justify-between">
                          <p className='text-gray-600'>Joined On</p>
-                         <p className='text-right'>{user.joined}</p>
+                         <p>{user.joined}</p>
+                      </div>
+                   <div className="flex justify-between items-center">
+                       <p className='text-gray-600'>Last Used</p>
+                       <div className="flex items-center gap-1">
+                          <p>{user.lastUsed}</p>
+                          <p className='text-[#bebaba] text-xs'>(today)</p>
+                      </div>
+                    </div>
+                 </div>
 
-                         <p className='text-gray-600'>Last Used</p>
-                         <p className='text-right'>{user.lastUsed}</p>
-                         <p className='text-[#bebaba] ml-60'>(today)</p>
-                  </div>
                   
             <div className='flex justify-around mt-4'>
               <button className='bg-gray-200 text-black rounded-lg px-15 py-3'>ID's</button>
