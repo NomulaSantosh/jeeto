@@ -131,9 +131,11 @@ const MyUser = () => {
               <FaUser className="text-sm text-black" />
             </div>
 
-            <div className='text-sm grid grid-cols-3 mb-1'>
+            <div className='text-sm grid grid-cols-2 mb-1'>
               <FaWhatsapp className='absolute right-21 top-15 text-green-500' />
-              <p>Number:</p> <span className='text-gray-700 ml-30'>{user.number}</span>
+              <div className='flex'>
+                <p>Number:</p> <span className='text-gray-700 ml-'>{user.number}</span>
+              </div>
             </div>
                     <div className='text-sm grid grid-cols-2 gap-y-1 my-3'>
                           <p className='text-gray-600'>Deposit To Wallet</p>
