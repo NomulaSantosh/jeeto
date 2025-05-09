@@ -123,6 +123,20 @@ const MyUser = () => {
         <h1 className="text-3xl font-bold">My Users</h1>
       </div>
 
+      <div className="flex justify-between items-center px-8 mb-6">
+        <input
+          type="text"
+          placeholder="🔍 ID, Name, Phone"
+          className="bg-[#2e2e2e] text-white placeholder-gray-400 px-4 py-2 rounded-md w-1/2 outline-none"
+        />
+        <select className="bg-[#2e2e2e] text-white px-4 py-2 rounded-md outline-none ml-4">
+          <option>Partners</option>
+          <option>All Users</option>
+          <option>Active</option>
+          <option>Inactive</option>
+        </select>
+      </div>
+
       <div className='px-8 grid grid-cols-4 grid-rows-4 gap-4'>
         {users.map((user, index) => (
           <div key={index} className='relative bg-white w-auto h-auto text-black rounded-xl shadow-md p-4'>
