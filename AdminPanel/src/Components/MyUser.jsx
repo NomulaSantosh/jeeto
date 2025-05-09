@@ -110,32 +110,6 @@ const users = [
     joined: '7 Apr 2025 | 7:42 PM',
     lastUsed: '7 Apr 2025 | 7:42 PM',
   },
-  {
-    id: 'JT-411147',
-    number: '9990808087',
-    deposit: 0,
-    withdraw: 0,
-    balance: 0,
-    pl: 0,
-    exposure: 0,
-    referred: 0,
-    activeClosed: '0/0',
-    joined: '7 Apr 2025 | 7:42 PM',
-    lastUsed: '7 Apr 2025 | 7:42 PM',
-  },
-  {
-    id: 'JT-411147',
-    number: '9990808087',
-    deposit: 0,
-    withdraw: 0,
-    balance: 0,
-    pl: 0,
-    exposure: 0,
-    referred: 0,
-    activeClosed: '0/0',
-    joined: '7 Apr 2025 | 7:42 PM',
-    lastUsed: '7 Apr 2025 | 7:42 PM',
-  },
 ];
 
 const MyUser = () => {
