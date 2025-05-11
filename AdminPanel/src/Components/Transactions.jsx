@@ -168,7 +168,7 @@ const MyUser = () => {
               <div className='items-center'>
                 <p
                   onClick={() => setSelectedUser(user)}
-                  className='bg-white text-black rounded-lg border-t border-gray-200 px-60 cursor-pointer hover:bg-gray-100 text-center'
+                  className='bg-white text-black rounded-lg border-t border-gray-200 px-55 cursor-pointer hover:bg-gray-100 text-center'
                 >
                   View
                 </p>
