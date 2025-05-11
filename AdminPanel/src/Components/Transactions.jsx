@@ -108,7 +108,7 @@ const MyUser = () => {
       </div>
 
       <div className="p-1 md:p-4 bg-gray-100">
-        <div className='px-8 grid grid-cols-4 grid-rows-4 gap-4'>
+        <div className='px-8 grid grid-cols-3 grid-rows-3 gap-4'>
           {users.map((user, index) => (
             <div key={index} className='relative bg-white w-auto h-auto text-black rounded-xl shadow-md p-4'>
               <div className='grid grid-cols-2 border-b border-gray-200 text-gray-600 bg-gray-300 mb-3'>
