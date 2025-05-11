@@ -4,6 +4,8 @@ import Home from "./Pages/Home";
 import React from "react";
 import Dashboard from "./Components/Dashboard";
 import MyUser from "./Components/MyUser";
+import Transactions from "./Components/Transactions"
+import Leads from "./Components/Leads";
 function App() {
   const isAuthenticated = localStorage.getItem("admin") === "true";
 
@@ -13,6 +15,7 @@ function App() {
       <Route path="/home/*" element={<Home />} />
       <Route path="/home/dashboard" element={<Dashboard />} />
       <Route path="/home/my-users" element={<MyUser />} />
+      <Route path="/home/leads" element={<Leads />} />
     </Routes>
   );
 }

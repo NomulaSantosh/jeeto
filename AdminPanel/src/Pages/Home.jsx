@@ -1,6 +1,7 @@
 import { Routes, Route, Link } from "react-router-dom";
 import Dashboard from "../Components/Dashboard";
 import MyUser from "../Components/MyUser"
+import Transactions from "../Components/Transactions"
 import React from "react";
 import logo from '../assets/logo.png';
 import {
