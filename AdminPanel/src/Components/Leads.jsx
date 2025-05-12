@@ -92,7 +92,7 @@ const MyUser = () => {
               <div className='grid grid-cols-2 border-b border-gray-200 text-gray-600 bg-gray-300 mb-3'>
                 <FaUser className="text-sm text-black" />
                                 
-                                <span className='text-gray-700'><FaPhone className='absolute  text-black' />{user.number}</span>
+                                <span className='text-gray-700 text-right'><FaPhone className='absolute right-26 top-5 text-black' />{user.number}</span>
                               
               </div>
 
@@ -101,7 +101,7 @@ const MyUser = () => {
                 
                 <p className='text-gray-600'>{user.requested}</p>
                 <button className='bg-gray-400 text-black rounded-lg'>
-                  <FaWhatsapp className='absolute text-green-700' /> 
+                  <FaWhatsapp className='absolute right-52 top-18 text-green-700' /> 
                   chat
                 </button>
 
