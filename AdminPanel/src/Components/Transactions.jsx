@@ -94,6 +94,8 @@ const MyUser = () => {
   const navigate = useNavigate();
   const [selectedUser, setSelectedUser] = useState(null); 
   const [selectedScreenshot, setSelectedScreenshot] = useState(null); // Add state for screenshot
+  const [selectedType, setSelectedType] = useState('All');
+  const [selectedStatus, setSelectedStatus] = useState('All');
   
     return (
     <div className='min-h-screen bg-black font-sans relative'>
@@ -106,6 +108,39 @@ const MyUser = () => {
       
       <div className='text-white text-center mb-8 pt-5'>
         <h1 className="text-3xl font-bold">My Transactions</h1>
+      </div>
+
+       <div className="bg-black px-8 py-4">
+        <div className="max-w-6xl mx-auto">
+          <div className="flex gap-4">
+            <div className="flex-1">
+              <label className="block text-sm font-medium text-white mb-1">Type</label>
+              <select 
+                value={selectedType}
+                onChange={(e) => setSelectedType(e.target.value)}
+                className="w-full p-2 border border-gray-300 rounded-md bg-white"
+              >
+                <option value="All">All</option>
+                <option value="Withdraw">Withdraw</option>
+                <option value="Deposit">Deposit</option>
+              </select>
+            </div>
+            
+            <div className="flex-1">
+              <label className="block text-sm font-medium text-white mb-1">Status</label>
+              <select 
+                value={selectedStatus}
+                onChange={(e) => setSelectedStatus(e.target.value)}
+                className="w-full p-2 border border-gray-300 rounded-md bg-white"
+              >
+                <option value="All">All</option>
+                <option value="Pending">Pending</option>
+                <option value="Approved">Approved</option>
+                <option value="Rejected">Rejected</option>
+              </select>
+            </div>
+          </div>
+        </div>
       </div>
 
       <div className="p-1 md:p-4 bg-gray-100">
