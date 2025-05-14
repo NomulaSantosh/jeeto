@@ -7,6 +7,7 @@ import MyUser from "./Components/MyUser";
 import Transactions from "./Components/Transactions"
 import Leads from "./Components/Leads";
 import Sitewise from "./Components/Sitewise"
+import Teams from "./Components/Teams"
 function App() {
   const isAuthenticated = localStorage.getItem("admin") === "true";
 
@@ -19,6 +20,7 @@ function App() {
       <Route path="/home/transactions" element={<Transactions />} />
       <Route path="/home/leads" element={<Leads />} />
       <Route path="/home/sitewise" element={<Sitewise />} />
+      <Route path="/home/my-team" element={<Teams />} />
     </Routes>
   );
 }
